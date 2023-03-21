@@ -1,0 +1,27 @@
+.container {
+  max-width: var(--max-width);
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.al-jt-center {
+  align-items: center;
+  justify-content: center;
+}

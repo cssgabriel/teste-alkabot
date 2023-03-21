@@ -1,3 +1,37 @@
+:root {
+  font-size: 62.5%;
+  --gutter: 1.5rem;
+  --max-width: 120rem;
+  --font-p: "Merriweather", serif;
+  --font-s: "Open Sans", sans-serif;
+}
+
+:root:has(input#light:checked) {
+  --color-p-1: #000;
+  --color-p-2: #000;
+  --color-p-3: #000;
+  --color-p-4: #000;
+  --color-p-5: #000;
+  --color-s-1: #000;
+  --color-s-2: #000;
+  --color-s-3: #000;
+  --color-s-4: #000;
+  --color-s-5: #000;
+}
+
+:root:has(input#dark:checked) {
+  --color-p-1: #000;
+  --color-p-2: #000;
+  --color-p-3: #000;
+  --color-p-4: #000;
+  --color-p-5: #000;
+  --color-s-1: #000;
+  --color-s-2: #000;
+  --color-s-3: #000;
+  --color-s-4: #000;
+  --color-s-5: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +41,31 @@
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+svg {
+  stroke: currentColor;
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  background: none;
 }
