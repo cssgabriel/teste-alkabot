@@ -27,28 +27,50 @@
       </nav>
     </header> -->
 
-    <article class="hero__section container flex justify-center">
-      <p>Nosso blog</p>
-      <h1>Posts recentes</h1>
-      <button>
-        <svg>
-          <use href="./src/img/icons.svg#arrow-down"></use>
-        </svg>
-      </button>
+    <div>
+      <input type="radio" id="light" name="color-theme" />light
+      <input type="radio" id="dark" name="color-theme" />dark
+    </div>
+
+    <article class="hero__section">
+      <div class="container flex justify-center">
+        <p>Nosso blog</p>
+        <h1>Posts recentes</h1>
+        <button class="flex">
+          <span>Visualizar posts</span>
+          <svg>
+            <use href="./src/img/icons.svg#arrow-down"></use>
+          </svg>
+        </button>
+      </div>
     </article>
 
-    <main class="main__section container">
-      <article class="post-container">
-        <h2>
-          sunt aut facere repellat provident occaecati excepturi optio
-          reprehenderit
-        </h2>
-        <p>
-          uia et suscipit\nsuscipit recusandae consequuntur expedita et
-          cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem
-          sunt rem eveniet architecto
-        </p>
-      </article>
+    <main class="main__section">
+      <div class="container flex justify-center">
+        <header>
+          <p>Nosso blog</p>
+          <h1>Posts recentes</h1>
+        </header>
+
+        <article class="post-container">
+          <div class="post--img">
+            <img src="" alt="" />
+          </div>
+          <h2>
+            sunt aut facere repellat provident occaecati excepturi optio
+            reprehenderit
+          </h2>
+          <p>
+            uia et suscipit\nsuscipit recusandae consequuntur expedita et
+            cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est
+            autem sunt rem eveniet architecto
+          </p>
+        </article>
+      </div>
     </main>
+
+    <script defer>
+      document.querySelector("#light").checked = true;
+    </script>
   </body>
 </html>

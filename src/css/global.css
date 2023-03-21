@@ -1,35 +1,39 @@
 :root {
   font-size: 62.5%;
+  --1pvw: 1vw;
   --gutter: 1.5rem;
+  --br-default: 5px;
   --max-width: 120rem;
   --font-p: "Merriweather", serif;
   --font-s: "Open Sans", sans-serif;
 }
 
 :root:has(input#light:checked) {
-  --color-p-1: #000;
-  --color-p-2: #000;
-  --color-p-3: #000;
-  --color-p-4: #000;
-  --color-p-5: #000;
-  --color-s-1: #000;
-  --color-s-2: #000;
-  --color-s-3: #000;
-  --color-s-4: #000;
-  --color-s-5: #000;
+  --color-p-1: #fff9e9;
+  --color-p-2: #fff1cd;
+  --color-p-3: #ffebb7;
+  --color-p-4: #e6d4a5;
+  --color-p-5: #ccbc92;
+  --color-s-1: #b34d22;
+  --color-s-2: #99421d;
+  --color-s-3: #803719;
+  --color-s-4: #662c14;
+  --color-s-5: #4c210f;
+  --color-t-1: #243763;
 }
 
 :root:has(input#dark:checked) {
-  --color-p-1: #000;
-  --color-p-2: #000;
-  --color-p-3: #000;
-  --color-p-4: #000;
-  --color-p-5: #000;
-  --color-s-1: #000;
-  --color-s-2: #000;
-  --color-s-3: #000;
-  --color-s-4: #000;
-  --color-s-5: #000;
+  --color-p-1: #b3a580;
+  --color-p-2: #998d6e;
+  --color-p-3: #80765c;
+  --color-p-4: #665e49;
+  --color-p-5: #4c4637;
+  --color-s-1: #ff8b5a;
+  --color-s-2: #ff7d46;
+  --color-s-3: #ff6e31;
+  --color-s-4: #e6632c;
+  --color-s-5: #cc5827;
+  --color-t-1: #243763;
 }
 
 * {

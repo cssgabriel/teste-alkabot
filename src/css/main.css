@@ -1,22 +1,13 @@
-.hero__section {
+.main_section {
   padding: var(--gutter);
   background-color: var(--color-p-1);
 }
 
-.hero__section::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: var(--color-p-5);
-}
-
-.hero__section > div {
-  height: 100vh;
+.main__section > div {
   flex-direction: column;
 }
 
-.hero__section p {
+.main__section header p {
   color: var(--color-s-1);
   font-family: var(--font-s);
   font-weight: 400;
@@ -24,14 +15,14 @@
   font-size: 1.5rem;
 }
 
-.hero__section h1 {
+.main__section h1 {
   color: var(--color-s-5);
   font-family: var(--font-p);
   font-weight: 400;
   font-size: 8.2rem;
 }
 
-.hero__section button {
+.main__section button {
   color: var(--color-s-5);
   align-self: flex-start;
   padding: 1rem;
@@ -43,7 +34,7 @@
   border-radius: var(--br-default);
 }
 
-.hero__section svg {
+.main__section svg {
   width: 2.5rem;
   height: 2.5rem;
 }
