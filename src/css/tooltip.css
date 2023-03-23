@@ -1,0 +1,13 @@
+.tooltip {
+  font-family: var(--font-p);
+  font-size: 1.2rem;
+  color: var(--color-p-1);
+  background-color: var(--color-s-5);
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  padding: 1rem;
+  box-shadow: 0 0 0 3px currentColor, 0 0 0 6px var(--color-s-5);
+  border-radius: var(--br-default);
+  opacity: 0.8;
+}

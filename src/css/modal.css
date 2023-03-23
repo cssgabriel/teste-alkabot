@@ -1,0 +1,29 @@
+.modal-overlay {
+  display: none;
+}
+
+.modal-overlay.active {
+  display: block;
+}
+
+.modal-overlay {
+  padding: var(--gutter);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 80vh;
+  max-width: 120rem;
+  max-height: calc(120rem * 0.5625);
+  background-color: red;
+}
