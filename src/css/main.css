@@ -24,6 +24,7 @@
 }
 
 .main__section--list-posts {
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   gap: 3rem;
 }
 
@@ -37,6 +38,8 @@
   position: relative;
   transition: 0.3s;
   cursor: pointer;
+  flex: 1;
+  flex-basis: 25rem;
 }
 
 .main__section--post {

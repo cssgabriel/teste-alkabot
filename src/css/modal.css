@@ -25,5 +25,107 @@
   height: 80vh;
   max-width: 120rem;
   max-height: calc(120rem * 0.5625);
-  background-color: red;
+  background-color: var(--color-p-1);
+  display: grid;
+  padding: 1.5rem;
+  grid-template-columns: auto 1fr;
+  column-gap: 5rem;
+  row-gap: 3rem;
+  overflow-y: scroll;
+}
+
+.modal::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+.modal::-webkit-scrollbar-track {
+  background: var(--color-p-5);
+}
+
+/* Handle */
+.modal::-webkit-scrollbar-thumb {
+  background: var(--color-s-1);
+
+  transition: all 0.3s;
+}
+
+/* Handle on hover */
+.modal::-webkit-scrollbar-thumb:hover {
+  background: var(--color-s-2);
+}
+
+.post-container {
+  max-width: 20rem;
+}
+
+.post-container h2 {
+  font-size: 1.4rem;
+}
+
+.post-container p {
+  font-size: 1rem;
+}
+
+.post-container .main__section--post-img {
+  height: 12rem;
+}
+
+.modal .modal__post-content h2 {
+  font-size: 5rem;
+  font-family: var(--font-p);
+  margin-bottom: 3rem;
+}
+
+.modal .modal__post-content p {
+  font-size: 1.4rem;
+  font-family: var(--font-s);
+}
+
+.modal__post-item {
+  border-radius: var(--br-default);
+  padding: 1.5rem;
+  background-color: var(--color-p-2);
+  box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.modal__post-item h3 {
+  font-family: var(--font-s);
+  font-size: 1.8rem;
+}
+
+.modal__post-item p:first-of-type {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.modal button {
+  background-color: var(--color-p-5);
+  place-self: end;
+  padding: 1rem 2rem;
+  border-radius: var(--br-default);
+  cursor: pointer;
+  color: var(--color-s-5);
+  text-transform: uppercase;
+  box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  grid-column: 2;
+}
+
+.modal button:hover {
+  transform: scale(1.05);
+}
+
+.modal .x-mark {
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  padding: 0.5rem;
+  right: 0;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.modal li {
+  cursor: default;
 }

@@ -63,119 +63,7 @@
           <h1>Posts recentes</h1>
         </header>
 
-        <ul class="main__section--list-posts flex">
-          <li class="main__section--list-item">
-            <article class="main__section--post">
-              <div class="main__section--post-img">
-                <img src="" alt="" />
-              </div>
-              <div class="main__section--post-content">
-                <h2>
-                  sunt aut facere repellat provident occaecati excepturi optio
-                  reprehenderit
-                </h2>
-                <p>
-                  uia et suscipit\nsuscipit recusandae consequuntur expedita et
-                  cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum
-                  est autem sunt rem eveniet architecto
-                </p>
-              </div>
-              <div
-                class="main__section--post-question"
-                title="Clique para mais informações"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
-                  />
-                </svg>
-              </div>
-            </article>
-          </li>
-          <li class="main__section--list-item">
-            <article class="main__section--post">
-              <div class="main__section--post-img">
-                <img src="" alt="" />
-              </div>
-              <div class="main__section--post-content">
-                <h2>
-                  sunt aut facere repellat provident occaecati excepturi optio
-                  reprehenderit
-                </h2>
-                <p>
-                  uia et suscipit\nsuscipit recusandae consequuntur expedita et
-                  cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum
-                  est autem sunt rem eveniet architecto
-                </p>
-              </div>
-              <div
-                class="main__section--post-question"
-                title="Clique para mais informações"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
-                  />
-                </svg>
-              </div>
-            </article>
-          </li>
-          <li class="main__section--list-item">
-            <article class="main__section--post">
-              <div class="main__section--post-img">
-                <img src="" alt="" />
-              </div>
-              <div class="main__section--post-content">
-                <h2>
-                  sunt aut facere repellat provident occaecati excepturi optio
-                  reprehenderit
-                </h2>
-                <p>
-                  uia et suscipit\nsuscipit recusandae consequuntur expedita et
-                  cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum
-                  est autem sunt rem eveniet architecto
-                </p>
-              </div>
-              <div
-                class="main__section--post-question"
-                title="Clique para mais informações"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
-                  />
-                </svg>
-              </div>
-            </article>
-          </li>
-        </ul>
+        <ul class="main__section--list-posts grid"></ul>
 
         <button class="main__section--load-more flex">
           <span>Carregar mais</span>
@@ -197,15 +85,87 @@
       </div>
     </main>
 
-    <!-- <div class="modal-overlay">
+    <!-- <div class="modal-overlay active" data-post-id="">
       <div class="modal">
-        <p>Clique para ver mais informações sobre o post.</p>
+        <div class="post-container">
+          <ul class="main__section--list-posts flex">
+            <li class="main__section--list-item" data-post-id="">
+              <article class="main__section--post">
+                <div class="main__section--post-img">
+                  <img src="" alt="" />
+                </div>
+                <div class="main__section--post-content">
+                  <h2>
+                    sunt aut facere repellat provident occaecati excepturi optio
+                    reprehenderit
+                  </h2>
+                  <p>
+                    uia et suscipit\nsuscipit recusandae consequuntur expedita
+                    et cum\nreprehenderit molestiae ut ut quas totam\nnostrum
+                    rerum est autem sunt rem eveniet architecto
+                  </p>
+                </div>
+                <div
+                  class="main__section--post-question"
+                  title="Clique para mais informações"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
+                    />
+                  </svg>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <div class="modal__post-content">
+          <h2>Comentários</h2>
+
+          <ul class="modal__post-list">
+            <li class="modal__post-item">
+              <h3>Mrs. Dennis Schulist</h3>
+              <p>Company: Considine-Lockman</p>
+              <p>
+                doloribus at sed quis culpa deserunt consectetur qui
+                praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut
+                voluptate autem\nvoluptatem repellendus aspernatur dolorem in
+              </p>
+            </li>
+          </ul>
+        </div>
+        <button>Ler post completo</button>
+        <div class="x-mark">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
       </div>
     </div> -->
-
+    <!-- 
     <div class="tooltip">
       <p>Clique para mais informações.</p>
-    </div>
+    </div> -->
 
     <script>
       document.querySelector("#light").checked = true;
